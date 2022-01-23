@@ -41,12 +41,31 @@ position_data <- read.csv('positions_Inan.csv', sep = ";") %>%
 
 ```
 
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
 
 Aside
 ================================================================================
 
 
 ![logo](Portrait_Inan.jpg){width=100%}
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("View this CV online with links at _inan-bostanci.netlify.app/cv_")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/inanimate36/my_cv/raw/main/Inan_Bostanci_Resume.pdf)")
+}
+```
 
 Contact {#contact}
 --------------------------------------------------------------------------------
