@@ -7,11 +7,11 @@ intro_text <- "Currently, I am interning and writing my thesis at Statistics Net
 # Language skills for skill bars visualization
 skills <- tribble(
   ~skill,               ~level,
-  "MS Office",          5,
   "R",                  4.5,
   "Python",             4,
   "SPSS",               5,
   "Stata",              2.5,
+  "MS Office",          5,
 )
 
 language <- tribble(
