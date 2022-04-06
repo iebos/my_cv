@@ -87,6 +87,16 @@ build_skill_bars(skills)
 ```
 
 
+Language Skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+build_skill_bars(language)
+```
+
+
+
+
 
 
 Disclaimer {#disclaimer}
