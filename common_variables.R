@@ -19,5 +19,5 @@ language <- tribble(
   "English",            5,
   "German",             5,
   "Turkish",            2.5,
-  "French",             1.5,
+  "French",             1,
 )

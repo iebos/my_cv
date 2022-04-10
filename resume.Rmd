@@ -132,7 +132,7 @@ position_data %>% print_section('education')
 
 
 
-Selected Positions {data-icon=suitcase}
+Employment History {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
