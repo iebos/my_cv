@@ -73,8 +73,9 @@ Contact {#contact}
 
 
 - <i class="fa fa-envelope"></i> i.e.bostanci@uu.nl
-- <i class="fa fa-github"></i> github.com/inanimate36
-- <i class="fa fa-link"></i> [inan-bostanci.netlify.app](http://inan-bostanci.netlify.app/)
+- <i class="fa fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/inan-bostanci/)
+- <i class="fa fa-github"></i> [github.com/inanimate36](https://github.com/inanimate36/)
+- <i class="fa fa-link"></i> [inan-bostanci.netlify.app](https://inan-bostanci.netlify.app/)
 
 
 
