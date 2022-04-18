@@ -1,7 +1,7 @@
 # Common non-csv data between CV and resume
 
 # Header with description of what is trying to be accomplished with this CV/Resume
-intro_text <- "Currently, I am interning and writing my thesis at Statistics Netherlands (CBS). In this research project, traffic loop sensor data and administrative data are utilised to improve models that estimate travel behavior and predict traffic on a nationwide level. The thesis is supervised by Dr. Peter Lugtig and Yvonne Gootzen."
+intro_text <- "Currently, I am interning and finishing up my thesis at Statistics Netherlands (CBS). In this research project, traffic loop sensor data and administrative data are utilised to improve models that estimate travel behavior and predict traffic on a nationwide level. The thesis is supervised by Dr. Peter Lugtig and Yvonne Gootzen."
 
 
 # Language skills for skill bars visualization

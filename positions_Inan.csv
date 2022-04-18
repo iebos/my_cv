@@ -1,5 +1,5 @@
 section;in_resume;title;loc;institution;start;end;description_1;description_2;description_3
-education;TRUE;MSc Methodology and Statistics in the Behavioral, Biomedical and Social Sciences (in progress);Utrecht University;Netherlands;2020;2022;Thesis: Linking traffic loop sensors and administrative data to predict nationwide traffic;NA;NA
+education;TRUE;MSc Methodology and Statistics in the Behavioral, Biomedical and Social Sciences (graduation in June 22);Utrecht University;Netherlands;2020;2022;Thesis: Linking traffic loop sensors and administrative data to predict nationwide traffic;NA;NA
 education;TRUE;BA Sociology;Leipzig University;Germany;2015;2020;Thesis: Using survey data and regional data to test for an effect of social networks on labour market outcomes;NA;NA
 research_positions;TRUE;"Intern Data Science/Methodology in Mobility Research
 ";DaCiMob;Statistics Netherlands (CBS);2021;2022;Working with big data for mobility research as part of my thesis;Linking traffic loop sensor data, administrative data and infrastructure data to predict nationwide traffic for official statistics;Writing scripts for data management and analysis of traffic loop sensor data
