@@ -63,7 +63,7 @@ Aside
 if(PDF_EXPORT){
   cat("View this CV online with links at _inan-bostanci.netlify.app/cv_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/inanimate36/my_cv/raw/main/Inan_Bostanci_Resume.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/inanimate36/my_cv/raw/Non-website-version/Inan_Bostanci_Resume.pdf)")
 }
 ```
 
