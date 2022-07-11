@@ -1,0 +1,146 @@
+---
+title: Inan Bostanci's Resume"
+author: Inan Bostanci
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/custom_resume.css', 'css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- TRUE
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R') # Functions for building sections from CSV data
+source('common_variables_german.R')  # Small variables for non-csv data such as intro text
+
+# First let's get the data, filtering to only the items tagged as
+# Resume items
+position_data <- read.csv('positions_Inan_german.csv', sep = ";") %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('research_positions') ~ 'positions', 
+      TRUE ~ section
+    )
+  ) 
+
+```
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+Aside
+================================================================================
+
+
+![logo](Portrait_Inan.jpg){width=100%}
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat(" ") #cat("View this CV online with links at _inan-bostanci.netlify.app_")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/inanimate36/my_cv/raw/Non-website-version/Inan_Bostanci_Resume.pdf)")
+}
+```
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+
+
+- <i class="fa fa-envelope"></i> i.e.bostanci@uu.nl
+- <i class="fa fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/inan-bostanci/)
+- <i class="fa fa-link"></i> [inan-bostanci.netlify.app](https://inan-bostanci.netlify.app/)
+
+
+
+Software Skills {#skills}
+--------------------------------------------------------------------------------
+
+
+```{r}
+build_skill_bars(skills)
+```
+
+
+Language Skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+build_skill_bars(language)
+```
+
+
+
+
+
+
+
+Last updated on `r Sys.Date()`.
+
+
+
+
+Main
+================================================================================
+
+Inan Bostanci {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+#cat(sanitize_links(intro_text))
+```
+
+
+
+Ausbildung {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+
+
+Berufliche Erfahrung {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('positions')
+```
+
+
+```{r, include= FALSE}
+#above chunk:
+#Selected Writing {data-icon=newspaper}
+#--------------------------------------------------------------------------------
+
+
+#position_data %>% print_section('writings')
+```
+
+
